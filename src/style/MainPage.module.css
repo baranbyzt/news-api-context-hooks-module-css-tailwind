@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+
+  .wrapper {
+@apply w-full h-full  flex justify-center
+        items-center mt-80 flex-wrap  ;
+}  
+.inner_wrapp {
+    @apply  grid sm:grid-cols-2 grid-cols-1 ;
+}
+.classinc{
+    @apply  flex flex-wrap;
+}
+.box_1 {
+    @apply bg-red-600 w-80 h-80 m-2 cursor-pointer hover:blur-sm;
+}
+.box_2 {
+    @apply bg-violet-600 w-80 h-80 m-2 cursor-pointer hover:blur-sm;
+}
+.box_3 {
+    @apply bg-violet-600 w-80 h-[500px] m-2 cursor-pointer hover:blur-sm;
+}
+.box_5 {
+    @apply bg-red-600 w-80 h-40 m-2 cursor-pointer hover:blur-sm;
+}
+.bigwrapper{
+    @apply relative p-0;
+}
+.text{
+    @apply text-center absolute -top-60  md:-top-20 left-[20%]
+    text-6xl;
+}
+}
+
