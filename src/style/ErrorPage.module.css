@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+@layer components {
+
+  
+
+.error_page_div_seciton {
+    @apply flex justify-center items-center;
+}
+.error_page_img_seciton {
+    @apply rounded-sm mt-80;
+}
+
+}
