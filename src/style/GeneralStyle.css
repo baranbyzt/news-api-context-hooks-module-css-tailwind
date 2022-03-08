@@ -32,6 +32,12 @@
     padding: 30px;
     border: 1px solid lightgray;
     border-radius: 5px;
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
   
   .news__title {
@@ -65,20 +71,15 @@
     margin-top: 10px;
     color: rgb(122, 122, 122);
   }
+
+  .news_img{
+    margin:10px;
+  }
+
+  .wrapper_news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   
-  
-  .a1{
-    background-color: yellow;
-  }
-  .a2{
-    background-color: blue;
-  }
-  .a3{
-    background-color: whitesmoke;
-  }
-  .a4{
-    background-color: violet;
-  }
-  .a5{
-    background-color: red;
   }

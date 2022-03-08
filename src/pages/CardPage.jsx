@@ -1,8 +1,5 @@
 
-
-import NewsArticle from "../contextStore/NewsArticle";
-
-
+import CardComponent from "../components/CardComponent";
 
 import React, { useContext,useEffect } from "react";
 import {NewsContext} from '../contextStore/NewsContext'
@@ -30,14 +27,14 @@ else if (pagesSelect == 'tesla'){
                             myData = wallStreetJournal;
                                 }
     return ( 
-        <div>
+        <div className="wrapper_news">
 
               <h1 className="head__text">News App 👋</h1>
     
     <div className="all__news ">
       {myData
         ? myData.articles.map((news) => (
-            <NewsArticle data={news} key={news.url} />
+            <CardComponent data={news} key={news.url} />
           ))
         : "Loading"}
     </div>
