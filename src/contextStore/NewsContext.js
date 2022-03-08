@@ -1,12 +1,11 @@
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
-// our apis with local
-// import Api_Apple from '../apis/NewsAppleApi.json'
+
 
 export const NewsContext = createContext();
 
- const Api_Apple = 'https://newsapi.org/v2/everything?q=apple&from=2022-03-04&to=2022-03-04&sortBy=popularity&apiKey=3dc14f42ef2745d69102492215a6fe2e';
+const Api_Apple = 'https://newsapi.org/v2/everything?q=apple&from=2022-03-04&to=2022-03-04&sortBy=popularity&apiKey=3dc14f42ef2745d69102492215a6fe2e';
 const Api_Tesla = 'https://newsapi.org/v2/everything?q=tesla&from=2022-02-08&sortBy=publishedAt&apiKey=3dc14f42ef2745d69102492215a6fe2e';
 const Api_UsaNews = 'https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=3dc14f42ef2745d69102492215a6fe2e';
 const Api_TeachCrunch = 'https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=3dc14f42ef2745d69102492215a6fe2e';
