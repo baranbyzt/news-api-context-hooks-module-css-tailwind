@@ -1,5 +1,7 @@
 
+// we are importing our 404.png file
 import Ourİmage from '../assets/404.png'
+// We style our 404 page
 import style from '../style/ErrorPage.module.css'
 
 const ErrorPage = () => {

@@ -5,9 +5,6 @@
 
 
 @layer components {
-
-  
-
 .error_page_div_seciton {
     @apply flex justify-center items-center;
 }

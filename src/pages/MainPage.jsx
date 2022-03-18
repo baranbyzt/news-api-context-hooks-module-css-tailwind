@@ -1,7 +1,8 @@
-import image from '../assets/404.png'
 
+// our MainPage module css file
 import style from '../style/MainPage.module.css'
 import React, { useContext,useEffect } from "react";
+// We import to access our context
 import {NewsContext} from '../contextStore/NewsContext'
 import { useNavigate,Link} from "react-router-dom";
 

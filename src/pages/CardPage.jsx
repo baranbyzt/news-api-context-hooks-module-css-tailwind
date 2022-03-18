@@ -1,7 +1,10 @@
 
+// our component
 import CardComponent from "../components/CardComponent";
-
+// our Card module css file
+import style from '../style/Card.module.css'
 import React, { useContext,useEffect } from "react";
+// We import to access our context
 import {NewsContext} from '../contextStore/NewsContext'
 
 const CardPage = () => {
@@ -27,11 +30,11 @@ else if (pagesSelect == 'tesla'){
                             myData = wallStreetJournal;
                                 }
     return ( 
-        <div className="wrapper_news">
+        <div className={style.wrapper_news}>
 
               <h1 className="head__text">News App 👋</h1>
     
-    <div className="all__news ">
+    <div className={style.all__news}>
       {myData
         ? myData.articles.map((news) => (
             <CardComponent data={news} key={news.url} />
